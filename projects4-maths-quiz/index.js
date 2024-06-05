@@ -24,6 +24,7 @@ if( randomNumber1 > randomNumber2 &&  questionType > 2){
 }
 
 let  question;
+
 let answer;
 
 
