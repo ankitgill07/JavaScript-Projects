@@ -14,11 +14,11 @@ container.style.marginBottom = "10px";
 const text = document.createElement("p");
 text.style.display = "inline";
 text.style.marginRight = "10px"
-text.textContent = item;
+text.textContent = item; 
 
 const button = document.createElement("button");
 button.textContent = "Delete";
-button.onclick = () => removeItem(idx);
+button.onclick = () => removeItems(idx);
 
 container.appendChild(text);
 container.appendChild(button);
@@ -51,10 +51,11 @@ input.value = "";
 saveItems();
 }
 
-function removeItem(idx) {
-    items.splice(idx, 1)
-    renderItems()
-    saveItems()
+function removeItems(idx){
+items.splice(idx,1);
+removeItems();
+saveItems();
 }
 
 document.addEventListener("DOMContentLoaded",loadItems);
+

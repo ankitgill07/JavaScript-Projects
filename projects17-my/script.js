@@ -29,6 +29,8 @@ function stopClock()  {
 
 function resetClock()  {
     stopClock()
+
+    
 secondsElapesd = 0;
     setTime()
 }

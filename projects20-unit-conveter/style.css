@@ -1,0 +1,65 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #2d6570;
+}
+h1{
+color: white;
+font-size: 45px;
+font-weight: 600;
+}
+h2{
+color: #13a550fb;
+font-size: 45px;
+font-weight: 600;
+text-decoration: underline;
+}
+
+#button{
+margin-top: 50px;
+padding: 10px 15px;
+font-size: 20px;
+border-radius: 4px;
+border: none;
+background-color: #13a550fb;
+color: white;
+}
+i{
+padding-right: 10px;
+}
+.Password{
+margin-top: 30px;
+background-color: white;
+height: 50px;
+width: 400px;
+border-radius: 2px;
+}
+p{
+font-size: 30px;
+padding: 5px;
+/* padding-left: 100px; */
+}
+.container{
+height: 300px;
+width: 500px;
+}
+
+#buttonEls{
+margin-left: 360px;
+padding: 5px 10px;
+border: none;
+background-color: transparent;
+}
+#copy{
+font-size: 25px;
+color: #13a550fb;
+position: fixed;
+top: 475px;
+}

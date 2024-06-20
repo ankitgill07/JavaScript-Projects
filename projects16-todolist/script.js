@@ -15,19 +15,19 @@ const userIndex = new Set();
 const quoteElement = document.getElementById("quote");
 
 function geneaterQuote(){
-    if(userIndex.size >= quotes.length){
-  userIndex.clear()
-    }
-    while(true){
-        const randamIdx = Math.floor(Math.random() * quotes.length);
-        
-        if(userIndex.has(randamIdx)) continue
-        
-        const quote = quotes[randamIdx];
-        quoteElement.innerHTML = quote;
-        userIndex.add(randamIdx);
-        break
-    }
-    }
-    
+if(userIndex.size >= quotes.length){
+userIndex.clear()
+}
+while(true){
+const randamIdx = Math.floor(Math.random() * quotes.length);
+
+if(userIndex.has(randamIdx)) continue
+
+const quote = quotes[randamIdx];
+quoteElement.innerHTML = quote;
+userIndex.add(randamIdx);
+break
+}
+}
+
 
