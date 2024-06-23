@@ -16,6 +16,7 @@ timestamp: new Date().toISOString()
 localStorage.setItem('emailValidation',JSON.stringify(storad))
 }
 
+
 buttonEl.addEventListener("click", () =>{
 const text  = inputEl.value;
 const solve = validEmail(text);

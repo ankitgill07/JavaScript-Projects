@@ -3,36 +3,35 @@ let interval = null;
 const time = document.getElementById("time");
 
 function padStart(value){
-    return String(value).padStart(2, "0");
+return String(value).padStart(2, "0");
 }
 
-
 function setTime() {
-    const minutes  = Math.floor(secondsElapesd / 60);
-    const seconds = secondsElapesd % 60 
-    time.innerHTML = `${padStart(minutes)}:${padStart(seconds)}`
+const minutes  = Math.floor(secondsElapesd / 60);
+const seconds = secondsElapesd % 60 
+time.innerHTML = `${padStart(minutes)}:${padStart(seconds)}`
 }
 
 function Timer(){
-    secondsElapesd++;
-    setTime();
+secondsElapesd++;
+setTime();
 } 
 
 function startClock() {
-    if (interval) stopClock()
-  interval = setInterval(Timer, 1000);
+if (interval) stopClock()
+interval = setInterval(Timer, 1000);
 }
 
 function stopClock()  {
- clearInterval(interval)
+clearInterval(interval)
 }
 
 function resetClock()  {
-    stopClock()
+stopClock()
 
-    
+
 secondsElapesd = 0;
-    setTime()
+setTime()
 }
 
 
